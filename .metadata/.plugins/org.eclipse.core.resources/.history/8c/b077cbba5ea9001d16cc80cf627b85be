@@ -1,0 +1,9 @@
+
+public class TipoVariables {
+
+	public static void main(String[] args) {//METODO PRINCIPAL
+		int edad = 20;
+		System.out.println("Mi Edad es: " + edad);
+	}
+
+}
