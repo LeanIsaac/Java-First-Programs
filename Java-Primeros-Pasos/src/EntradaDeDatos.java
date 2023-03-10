@@ -9,20 +9,29 @@ public class EntradaDeDatos {
 		String name = sc.nextLine();
 		System.out.println("Ingrese su Edad: ");
 		String edad = sc.nextLine();
-		System.out.println("Que lenjuage de programacion maneja: ");
+		System.out.println("Que lenjuage de programacion es tu favorito? ");
 		String lenguaje = sc.nextLine();
 		
-		System.out.println("Hola " + name + ", Su edad es " + edad + " Y su lenguaje es " + lenguaje);
+		int age = Integer.parseInt( edad );				// convierte un STRING al tipo de dato INT
 		
+		System.out.println("Cuantos lenguajes manejas? ");
+		int cantDeLeng = sc.nextInt();
+		
+		if( cantDeLeng >= 3 ) {
+			System.out.println("Eres Full-Stack");
+		}
+		else {
+			System.out.println("No Eres Full-Stack");
+		}
+		
+		if ( age < 18 ) {
+			System.out.println("Hola " + name + ", Eres menor de Edad");
+		}
+		else {			
+			System.out.println("Hola " + name + ", Su edad es " + edad + " Y su lenguaje de programacion Favorito es " + lenguaje);
+		}
+	
 		sc.close();
-		
-		/*
-		int age = Integer.parseInt(edad); 				// convierte un STRING al tipo de dato INT
-		age = age + 50;
-		System.out.println(age);*/
-		
-		
-		
 		
 		
 	}//FIN METODO PRINCIPAL // FIN DEL SCOPE
