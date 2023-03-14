@@ -4,8 +4,13 @@
 	 private double saldo; //encapsulando saldo
 	 private int agencia;
 	 private int numero;
-	 Cliente titular = new Cliente();
+	 private Cliente titular = new Cliente();
 	 //Cliente titular = new Cliente();
+	 
+	 //CONSTRUCTOR
+	 public Cuenta(){//RETORNA NUESTRO OBJETO CUENTA
+		 System.out.println("Aqui se crea una nueva cuenta");
+	 }
 	 
 	 void depositar(double valor) {
 		 //this = este objeto = cuenta // hace referencia al objeto cuenta

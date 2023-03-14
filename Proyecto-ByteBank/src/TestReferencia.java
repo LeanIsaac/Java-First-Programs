@@ -10,10 +10,10 @@ public class TestReferencia {
 		
 		Cuenta cuentaDeDiego = new Cuenta();
 		cuentaDeDiego.setAgencia(22);
-		cuentaDeDiego.titular = diego;
+		cuentaDeDiego.setTitular(diego);
 		
-		System.out.println(cuentaDeDiego.titular.getDocumento());
-		System.out.println(cuentaDeDiego.titular.getNombre());
+		System.out.println(cuentaDeDiego.getTitular().getDocumento());
+		System.out.println(cuentaDeDiego.getTitular().getNombre());
 
 	}
 
