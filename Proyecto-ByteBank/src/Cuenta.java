@@ -7,9 +7,17 @@
 	 private Cliente titular = new Cliente();
 	 //Cliente titular = new Cliente();
 	 
+	 private static int total = 0; //Variable de la clase no de la instancia
+	 // static =  la variable no puede ser alterada por la instancia
+	 
+	 public static int getTotal() {
+		 return Cuenta.total;
+	 }
+	 
 	 //CONSTRUCTOR
 	 public Cuenta(){//RETORNA NUESTRO OBJETO CUENTA
-		 System.out.println("Aqui se crea una nueva cuenta");
+		 total++;
+		 System.out.println("se van creando: " + total + " cuentas"); 
 	 }
 	 
 	 void depositar(double valor) {
