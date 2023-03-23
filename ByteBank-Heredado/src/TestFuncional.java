@@ -2,7 +2,7 @@
 public class TestFuncional {
 	public static void main(String[] args) {
 		
-		Funcionario diego = new Funcionario();
+		Funcionario diego = new Contador();
 		
 		diego.setNombre("Diego ");
 		diego.setDocumento("41 622 302");

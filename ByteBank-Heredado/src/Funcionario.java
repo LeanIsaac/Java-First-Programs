@@ -1,5 +1,8 @@
-
-public class Funcionario {
+/*Una clase abstracta representa un concepto, algo abstracto, y el compilador no permite instanciar un objeto de esa clase. 
+Para crear una instancia, es necesario crear primero una clase hija no abstracta.*/
+//public abstract class Funcionario {
+	
+public abstract class Funcionario {
 	
 	private String nombre;
 	private String documento;
@@ -34,11 +37,13 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	public double getBonificacion() {
-		//return this.salario * 0.1; //10% del salario
-		return this.salario * 0.05; //5% del salario
-		
-	}
+	//Preparo el metodo para que sea implementado por las clases hijas
+	//Este metodo obliga a todas las clases hijas a sobre-escribir este metodo
+	public abstract double getBonificacion();
+	//{
+	//return this.salario * 0.1; //10% del salario
+	//return this.salario * 0.05; //5% del salario
+	//}
 	
 	public int getTipo() {
 		return tipo;

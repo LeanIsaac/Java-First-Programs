@@ -1,5 +1,5 @@
 //Entidad Cuenta
- class Cuenta { //OBJETO
+ public class Cuenta { //OBJETO
 	 //ATRIBUTOS
 	 private double saldo; //encapsulando saldo
 	 private int agencia;
@@ -37,7 +37,8 @@
 	 
 	 public boolean transferir(double valor, Cuenta cuenta) {
 		if(this.saldo >= valor) {
-			this.saldo -= valor;
+			//this.saldo -= valor;
+			this.retirar(valor);
 			cuenta.depositar(valor);
 			return true;
 		}

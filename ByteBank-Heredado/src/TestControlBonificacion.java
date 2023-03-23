@@ -2,7 +2,7 @@
 public class TestControlBonificacion {
 	public static void main(String[] args) {
 		
-		Funcionario lena = new Funcionario();
+		Funcionario lena = new Contador();
 		lena.setSalario(2000);
 		
 		Gerente jime = new Gerente();
